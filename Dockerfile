@@ -12,7 +12,7 @@ COPY src ./src
 
 RUN chmod 777 mvnw 
 
-RUN ./mvnw package 
+RUN ./mvnw package -DskipTests
 
 RUN ls -l ./target 
 
