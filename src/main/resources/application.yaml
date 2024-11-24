@@ -3,9 +3,9 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://dpg-ct1paie8ii6s73fi5t00-a.oregon-postgres.render.com:5432/projetoloja
-        username: projetoloja_y3t8_user
-        password: zADCP0gaC7a7TswBRUv2srMuZgzCF4cM
+        url: jdbc:postgresql://dpg-ct1pjil6l47c73bhp3n0-a.oregon-postgres.render.com:5432/crudloja
+        username: crudloja_user
+        password: 1oQRp1VNvZZTGKGVQuIOygiKPECERUru
         driver-class-name: org.postgresql.Driver
         initialize: true
 
