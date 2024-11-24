@@ -1,14 +1,19 @@
-# Usar uma imagem base do OpenJDK
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk-alpine 
 
-# Definir o diretório de trabalho dentro do container
-WORKDIR /app
+WORKDIR /app 
 
-# Copiar o arquivo JAR gerado para o container
-COPY target/projetoLoja-0.0.1-SNAPSHOT.jar app.jar
+COPY pom.xml . 
 
-# Expôr a porta 8080 (ou a porta que sua aplicação usa)
-EXPOSE 8080
+COPY mvnw . 
 
-# Comando para executar o JAR da aplicação
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY .mvn .mvn 
+
+COPY src ./src 
+
+RUN chmod 777 mvnw 
+
+RUN ./mvnw package 
+
+RUN ls -l ./target 
+
+CMD ["java", "-jar", "target/projetoLoja-0.0.1-SNAPSHOT.war"]

@@ -1,12 +1,12 @@
 server:
-    port:8080
+    port: 8080
 
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/crudloja
-        username: root
-        password: root
-        drive-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://dpg-cstjtrggph6c739fgm70-a.oregon-postgres.render.com:5432/projetoloja
+        username: banco_uoyu_user
+        password: M9O9anqbXrgfSisgC65AipdLoyh4bYmr
+        driver-class-name: org.postgresql.Driver
         initialize: true
 
 jpa:
