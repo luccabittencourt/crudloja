@@ -3,9 +3,9 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://dpg-cstjtrggph6c739fgm70-a.oregon-postgres.render.com:5432/projetoloja
-        username: banco_uoyu_user
-        password: M9O9anqbXrgfSisgC65AipdLoyh4bYmr
+        url: jdbc:postgresql://dpg-ct1o3r68ii6s73fhrqcg-a.oregon-postgres.render.com:5432/projetoloja
+        username: projetoloja_user
+        password: UBsT9wTrQozU08xjzct8Z4rkWaxr5Avs
         driver-class-name: org.postgresql.Driver
         initialize: true
 
